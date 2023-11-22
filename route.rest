@@ -1,0 +1,28 @@
+
+GET http://localhost:3000/restaurants/655e894da90231005623db62
+###
+
+POST http://localhost:3000/restaurants/insert
+Content-Type: application/json
+
+{
+    "borough_name":"Marlborough",
+    "sample_id":"321786543"
+}
+###
+PATCH http://localhost:3000/restaurants/655e894da90231005623db62
+Content-Type: application/json
+
+{
+    "name" : "Neal Caffrey"
+}
+###
+PATCH http://localhost:3000/restaurants/655e894da90231005623db62
+Content-Type: application/json
+
+{
+    "grade" : "L4"
+}
+
+###
+DELETE http://localhost:3000/restaurants/L2
